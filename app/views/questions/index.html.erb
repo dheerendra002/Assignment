@@ -1,0 +1,16 @@
+
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+
+  <% @question.each do |q| %>
+      <tr>
+        <td><%= q.ques %></td>
+        <td><%= q.qid %></td>
+        <td><%= link_to 'Show', question_path(q) %></td>
+      </tr>
+  <% end %>
+</table>

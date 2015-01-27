@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ques: MyText
+  qid: 1
+
+two:
+  ques: MyText
+  qid: 1

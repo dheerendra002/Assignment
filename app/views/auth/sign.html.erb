@@ -1,0 +1,15 @@
+<p>Sign In</p>
+<%= form_for @user, :as => :user, :url => sign_path(@user) do |f| %>
+    <p>
+      <%= f.label 'username' %><br />
+      <%= f.text_field :username %>
+    </p>
+    <p>
+      <%= f.label 'password:' %><br />
+      <%= f.password_field :password %>
+    </p>
+    <p>
+      <%= f.submit 'Sign In' %>
+
+    </p>
+<% end %>

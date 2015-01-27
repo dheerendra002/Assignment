@@ -1,0 +1,48 @@
+<p>
+  <strong>Question:</strong>
+  <%= @question.ques %>
+</p>
+
+<p>
+  <strong>id:</strong>
+  <%= @question.qid %>
+</p>
+
+<% if false %>
+<h2>Comments</h2>
+<% @question.comments.each do |comment| %>
+    <p>
+      <strong>comment:</strong>
+      <%= comment.comment %>
+    </p>
+
+    <p>
+      <strong>qid:</strong>
+      <%= comment.qid %>
+    </p>
+    <p>
+      <strong>ansid:</strong>
+      <%= comment.ansid %>
+    </p>
+<% end %>
+
+
+<h2>Add a comment:</h2>
+<%= form_for @question do |f| %>
+    <p>
+      <%= f.label :comment %><br>
+      <%= f.text_area :comment %>
+    </p>
+    <p>
+      <%= f.label :questionid %><br>
+      <%= f.text_field :qid %>
+    </p>
+    <p>
+      <%= f.label :anserid %><br>
+      <%= f.text_field :ansid %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
+<% end %>

@@ -1,0 +1,15 @@
+<%= form_for :answer, url: answers_path do |f| %>
+    <p>
+      <%= f.label :answer %><br>
+      <%= f.text_area :answer %>
+    </p>
+
+    <p>
+      <%= f.label :ansid %><br>
+      <%= f.text_field :ansid %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
